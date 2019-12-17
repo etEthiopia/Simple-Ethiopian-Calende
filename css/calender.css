@@ -1,0 +1,37 @@
+.mtable{
+	border: 1px solid black;
+	
+}
+.mthead{
+	background-color: blue;
+	color: white;
+}
+.mthead td{
+	text-align: center;
+	margin: 0px;
+}
+.mtblue{
+	background-color: lightblue;
+}
+.mtblue td{
+	text-align: right;
+}
+.mtwhite td{
+	text-align: right;
+}
+.mtable tr{
+	height: 30px;
+}
+#hhead{
+	position: relative;
+	top:50%;
+}
+#mother{
+	width:100%;
+}
+.mtable td{
+	width: 60px;
+}
+body{
+	padding:5%;
+}
