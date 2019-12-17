@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+    
+        <meta name = "keywords" content = "HTML, CSS, JAVASCRIPT">
+        <meta name = "author" content = "Dagmawi Negussu">
+        <title>
+            Ethiopian Calender
+        </title>
+        <link rel = "stylesheet" type = "text/css" href = "../css/calender.css">
+        
+    </head>
+    <header>
+
+    </header>
+    <body>
+        <div>
+            <label>
+                ወር:
+                <select name = "month" id="monthh">
+                    
+                        <option value="1">መስከረም</option>
+                        <option value="2">ጥቅምት</option>
+                        <option value="3">ህዳር</option>
+                        <option value="4">ታህሳስ</option>
+                        <option value="5">ጥር</option>
+                        <option value="6">የካቲት</option>
+                        <option value="7">መጋቢት</option>
+                        <option value="8">ሚያዚያ</option>
+                        <option value="9">ግንቦት</option>
+                        <option value="10">ሰኔ</option>
+                        <option value="11">ሐምሌ</option>
+                        <option value="12">ነሐሴ</option>
+                        <option value="13">ጷጉሜ</option>
+                </select>
+                አመት: 
+                <input id = "yearr" type="number" maxlength="4" minlength="4" value="2010">
+                <Button name = "gmonth" type="button" onclick="hmonth()">
+                    Generate by Month
+                </Button>
+                <Button name = "gyear" type="button" onclick="start()">
+                        Generate by Year
+                </Button>
+                    <span>Number type: </span>
+                    <select id="lang">
+                            <option value="Amharic" onselect="lang()">፩</option>
+                            <option value="English" onselect="lang()">1</option>
+                    </select>
+        </div>
+        <table id = "mother">
+            <tr>
+                <td>
+                    <table class = "mtable" id="1">
+                        <tr class = "mthead">
+                            <td class = "mtname" colspan="2">መስከረም</td>
+                            <td class = "mtnone" colspan="3"></td>
+                            <td>ዘመነ</td>
+                            <td class = "mtyear"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td>እሁድ</td>
+                            <td>ሰኞ</td>
+                            <td>ማክሰኞ</td>
+                            <td>እሮብ</td>
+                            <td>ሐሙስ</td>
+                            <td>ዓርብ</td>
+                            <td>ቅዳሜ</td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su11"></td>
+                            <td id="mo11"></td>
+                            <td id="tu11"></td>
+                            <td id="we11"></td>
+                            <td id="th11"></td>
+                            <td id="fr11"></td>
+                            <td id="sa11"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su12"></td>
+                            <td id="mo12"></td>
+                            <td id="tu12"></td>
+                            <td id="we12"></td>
+                            <td id="th12"></td>
+                            <td id="fr12"></td>
+                            <td id="sa12"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su13"></td>
+                            <td id="mo13"></td>
+                            <td id="tu13"></td>
+                            <td id="we13"></td>
+                            <td id="th13"></td>
+                            <td id="fr13"></td>
+                            <td id="sa13"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su14"></td>
+                            <td id="mo14"></td>
+                            <td id="tu14"></td>
+                            <td id="we14"></td>
+                            <td id="th14"></td>
+                            <td id="fr14"></td>
+                            <td id="sa14"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su15"></td>
+                            <td id="mo15"></td>
+                            <td id="tu15"></td>
+                            <td id="we15"></td>
+                            <td id="th15"></td>
+                            <td id="fr15"></td>
+                            <td id="sa15"></td> 
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su16"></td>
+                            <td id="mo16"></td>
+                            <td id="tu16"></td>
+                            <td id="we16"></td>
+                            <td id="th16"></td>
+                            <td id="fr16"></td>
+                            <td id="sa16"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                   <table class = "mtable" id="2">
+                        <tr class = "mthead">
+                            <td class = "mtname" colspan="2">ጥቅምት</td>
+                            <td class = "mtnone" colspan="3"></td>
+                            <td>ዘመነ</td>
+                            <td class = "mtyear"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td>እሁድ</td>
+                            <td>ሰኞ</td>
+                            <td>ማክሰኞ</td>
+                            <td>እሮብ</td>
+                            <td>ሐሙስ</td>
+                            <td>ዓርብ</td>
+                            <td>ቅዳሜ</td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su21"></td>
+                            <td id="mo21"></td>
+                            <td id="tu21"></td>
+                            <td id="we21"></td>
+                            <td id="th21"></td>
+                            <td id="fr21"></td>
+                            <td id="sa21"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su22"></td>
+                            <td id="mo22"></td>
+                            <td id="tu22"></td>
+                            <td id="we22"></td>
+                            <td id="th22"></td>
+                            <td id="fr22"></td>
+                            <td id="sa22"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su23"></td>
+                            <td id="mo23"></td>
+                            <td id="tu23"></td>
+                            <td id="we23"></td>
+                            <td id="th23"></td>
+                            <td id="fr23"></td>
+                            <td id="sa23"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su24"></td>
+                            <td id="mo24"></td>
+                            <td id="tu24"></td>
+                            <td id="we24"></td>
+                            <td id="th24"></td>
+                            <td id="fr24"></td>
+                            <td id="sa24"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su25"></td>
+                            <td id="mo25"></td>
+                            <td id="tu25"></td>
+                            <td id="we25"></td>
+                            <td id="th25"></td>
+                            <td id="fr25"></td>
+                            <td id="sa25"></td> 
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su26"></td>
+                            <td id="mo26"></td>
+                            <td id="tu26"></td>
+                            <td id="we26"></td>
+                            <td id="th26"></td>
+                            <td id="fr26"></td>
+                            <td id="sa26"></td>
+                        </tr>
+                    </table>               
+                </td>
+                <td>
+                	<table class = "mtable" id="3">
+                        <tr class = "mthead">
+                            <td class = "mtname" colspan="2">ህዳር</td>
+                            <td class = "mtnone" colspan="3"></td>
+                            <td>ዘመነ</td>
+                            <td class = "mtyear"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td>እሁድ</td>
+                            <td>ሰኞ</td>
+                            <td>ማክሰኞ</td>
+                            <td>እሮብ</td>
+                            <td>ሐሙስ</td>
+                            <td>ዓርብ</td>
+                            <td>ቅዳሜ</td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su31"></td>
+                            <td id="mo31"></td>
+                            <td id="tu31"></td>
+                            <td id="we31"></td>
+                            <td id="th31"></td>
+                            <td id="fr31"></td>
+                            <td id="sa31"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su32"></td>
+                            <td id="mo32"></td>
+                            <td id="tu32"></td>
+                            <td id="we32"></td>
+                            <td id="th32"></td>
+                            <td id="fr32"></td>
+                            <td id="sa32"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su33"></td>
+                            <td id="mo33"></td>
+                            <td id="tu33"></td>
+                            <td id="we33"></td>
+                            <td id="th33"></td>
+                            <td id="fr33"></td>
+                            <td id="sa33"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su34"></td>
+                            <td id="mo34"></td>
+                            <td id="tu34"></td>
+                            <td id="we34"></td>
+                            <td id="th34"></td>
+                            <td id="fr34"></td>
+                            <td id="sa34"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su35"></td>
+                            <td id="mo35"></td>
+                            <td id="tu35"></td>
+                            <td id="we35"></td>
+                            <td id="th35"></td>
+                            <td id="fr35"></td>
+                            <td id="sa35"></td> 
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su36"></td>
+                            <td id="mo36"></td>
+                            <td id="tu36"></td>
+                            <td id="we36"></td>
+                            <td id="th36"></td>
+                            <td id="fr36"></td>
+                            <td id="sa36"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                	<table class = "mtable" id="4">
+                        <tr class = "mthead">
+                            <td class = "mtname" colspan="2">ታህሳስ</td>
+                            <td class = "mtnone" colspan="3"></td>
+                            <td>ዘመነ</td>
+                            <td class = "mtyear"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td>እሁድ</td>
+                            <td>ሰኞ</td>
+                            <td>ማክሰኞ</td>
+                            <td>እሮብ</td>
+                            <td>ሐሙስ</td>
+                            <td>ዓርብ</td>
+                            <td>ቅዳሜ</td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su41"></td>
+                            <td id="mo41"></td>
+                            <td id="tu41"></td>
+                            <td id="we41"></td>
+                            <td id="th41"></td>
+                            <td id="fr41"></td>
+                            <td id="sa41"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su42"></td>
+                            <td id="mo42"></td>
+                            <td id="tu42"></td>
+                            <td id="we42"></td>
+                            <td id="th42"></td>
+                            <td id="fr42"></td>
+                            <td id="sa42"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su43"></td>
+                            <td id="mo43"></td>
+                            <td id="tu43"></td>
+                            <td id="we43"></td>
+                            <td id="th43"></td>
+                            <td id="fr43"></td>
+                            <td id="sa43"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su44"></td>
+                            <td id="mo44"></td>
+                            <td id="tu44"></td>
+                            <td id="we44"></td>
+                            <td id="th44"></td>
+                            <td id="fr44"></td>
+                            <td id="sa44"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su45"></td>
+                            <td id="mo45"></td>
+                            <td id="tu45"></td>
+                            <td id="we45"></td>
+                            <td id="th45"></td>
+                            <td id="fr45"></td>
+                            <td id="sa45"></td> 
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su46"></td>
+                            <td id="mo46"></td>
+                            <td id="tu46"></td>
+                            <td id="we46"></td>
+                            <td id="th46"></td>
+                            <td id="fr46"></td>
+                            <td id="sa46"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                	<table class = "mtable" id="5">
+                        <tr class = "mthead">
+                            <td class = "mtname" colspan="2">ጥር</td>
+                            <td class = "mtnone" colspan="3"></td>
+                            <td>ዘመነ</td>
+                            <td class = "mtyear"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td>እሁድ</td>
+                            <td>ሰኞ</td>
+                            <td>ማክሰኞ</td>
+                            <td>እሮብ</td>
+                            <td>ሐሙስ</td>
+                            <td>ዓርብ</td>
+                            <td>ቅዳሜ</td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su51"></td>
+                            <td id="mo51"></td>
+                            <td id="tu51"></td>
+                            <td id="we51"></td>
+                            <td id="th51"></td>
+                            <td id="fr51"></td>
+                            <td id="sa51"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su52"></td>
+                            <td id="mo52"></td>
+                            <td id="tu52"></td>
+                            <td id="we52"></td>
+                            <td id="th52"></td>
+                            <td id="fr52"></td>
+                            <td id="sa52"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su53"></td>
+                            <td id="mo53"></td>
+                            <td id="tu53"></td>
+                            <td id="we53"></td>
+                            <td id="th53"></td>
+                            <td id="fr53"></td>
+                            <td id="sa53"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su54"></td>
+                            <td id="mo54"></td>
+                            <td id="tu54"></td>
+                            <td id="we54"></td>
+                            <td id="th54"></td>
+                            <td id="fr54"></td>
+                            <td id="sa54"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su55"></td>
+                            <td id="mo55"></td>
+                            <td id="tu55"></td>
+                            <td id="we55"></td>
+                            <td id="th55"></td>
+                            <td id="fr55"></td>
+                            <td id="sa55"></td> 
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su56"></td>
+                            <td id="mo56"></td>
+                            <td id="tu56"></td>
+                            <td id="we56"></td>
+                            <td id="th56"></td>
+                            <td id="fr56"></td>
+                            <td id="sa56"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                	<table class = "mtable" id="6">
+                        <tr class = "mthead">
+                            <td class = "mtname" colspan="2">የካቲት</td>
+                            <td class = "mtnone" colspan="3"></td>
+                            <td>ዘመነ</td>
+                            <td class = "mtyear"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td>እሁድ</td>
+                            <td>ሰኞ</td>
+                            <td>ማክሰኞ</td>
+                            <td>እሮብ</td>
+                            <td>ሐሙስ</td>
+                            <td>ዓርብ</td>
+                            <td>ቅዳሜ</td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su61"></td>
+                            <td id="mo61"></td>
+                            <td id="tu61"></td>
+                            <td id="we61"></td>
+                            <td id="th61"></td>
+                            <td id="fr61"></td>
+                            <td id="sa61"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su62"></td>
+                            <td id="mo62"></td>
+                            <td id="tu62"></td>
+                            <td id="we62"></td>
+                            <td id="th62"></td>
+                            <td id="fr62"></td>
+                            <td id="sa62"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su63"></td>
+                            <td id="mo63"></td>
+                            <td id="tu63"></td>
+                            <td id="we63"></td>
+                            <td id="th63"></td>
+                            <td id="fr63"></td>
+                            <td id="sa63"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su64"></td>
+                            <td id="mo64"></td>
+                            <td id="tu64"></td>
+                            <td id="we64"></td>
+                            <td id="th64"></td>
+                            <td id="fr64"></td>
+                            <td id="sa64"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su65"></td>
+                            <td id="mo65"></td>
+                            <td id="tu65"></td>
+                            <td id="we65"></td>
+                            <td id="th65"></td>
+                            <td id="fr65"></td>
+                            <td id="sa65"></td> 
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su66"></td>
+                            <td id="mo66"></td>
+                            <td id="tu66"></td>
+                            <td id="we66"></td>
+                            <td id="th66"></td>
+                            <td id="fr66"></td>
+                            <td id="sa66"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                	<table class = "mtable" id="7">
+                        <tr class = "mthead">
+                            <td class = "mtname" colspan="2">መጋቢት</td>
+                            <td class = "mtnone" colspan="3"></td>
+                            <td>ዘመነ</td>
+                            <td class = "mtyear"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td>እሁድ</td>
+                            <td>ሰኞ</td>
+                            <td>ማክሰኞ</td>
+                            <td>እሮብ</td>
+                            <td>ሐሙስ</td>
+                            <td>ዓርብ</td>
+                            <td>ቅዳሜ</td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su71"></td>
+                            <td id="mo71"></td>
+                            <td id="tu71"></td>
+                            <td id="we71"></td>
+                            <td id="th71"></td>
+                            <td id="fr71"></td>
+                            <td id="sa71"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su72"></td>
+                            <td id="mo72"></td>
+                            <td id="tu72"></td>
+                            <td id="we72"></td>
+                            <td id="th72"></td>
+                            <td id="fr72"></td>
+                            <td id="sa72"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su73"></td>
+                            <td id="mo73"></td>
+                            <td id="tu73"></td>
+                            <td id="we73"></td>
+                            <td id="th73"></td>
+                            <td id="fr73"></td>
+                            <td id="sa73"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su74"></td>
+                            <td id="mo74"></td>
+                            <td id="tu74"></td>
+                            <td id="we74"></td>
+                            <td id="th74"></td>
+                            <td id="fr74"></td>
+                            <td id="sa74"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su75"></td>
+                            <td id="mo75"></td>
+                            <td id="tu75"></td>
+                            <td id="we75"></td>
+                            <td id="th75"></td>
+                            <td id="fr75"></td>
+                            <td id="sa75"></td> 
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su76"></td>
+                            <td id="mo76"></td>
+                            <td id="tu76"></td>
+                            <td id="we76"></td>
+                            <td id="th76"></td>
+                            <td id="fr76"></td>
+                            <td id="sa76"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                	<table class = "mtable" id="8">
+                        <tr class = "mthead">
+                            <td class = "mtname" colspan="2">ሚያዚያ</td>
+                            <td class = "mtnone" colspan="3"></td>
+                            <td>ዘመነ</td>
+                            <td class = "mtyear"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td>እሁድ</td>
+                            <td>ሰኞ</td>
+                            <td>ማክሰኞ</td>
+                            <td>እሮብ</td>
+                            <td>ሐሙስ</td>
+                            <td>ዓርብ</td>
+                            <td>ቅዳሜ</td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su81"></td>
+                            <td id="mo81"></td>
+                            <td id="tu81"></td>
+                            <td id="we81"></td>
+                            <td id="th81"></td>
+                            <td id="fr81"></td>
+                            <td id="sa81"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su82"></td>
+                            <td id="mo82"></td>
+                            <td id="tu82"></td>
+                            <td id="we82"></td>
+                            <td id="th82"></td>
+                            <td id="fr82"></td>
+                            <td id="sa82"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su83"></td>
+                            <td id="mo83"></td>
+                            <td id="tu83"></td>
+                            <td id="we83"></td>
+                            <td id="th83"></td>
+                            <td id="fr83"></td>
+                            <td id="sa83"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su84"></td>
+                            <td id="mo84"></td>
+                            <td id="tu84"></td>
+                            <td id="we84"></td>
+                            <td id="th84"></td>
+                            <td id="fr84"></td>
+                            <td id="sa84"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su85"></td>
+                            <td id="mo85"></td>
+                            <td id="tu85"></td>
+                            <td id="we85"></td>
+                            <td id="th85"></td>
+                            <td id="fr85"></td>
+                            <td id="sa85"></td> 
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su86"></td>
+                            <td id="mo86"></td>
+                            <td id="tu86"></td>
+                            <td id="we86"></td>
+                            <td id="th86"></td>
+                            <td id="fr86"></td>
+                            <td id="sa86"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                	<table class = "mtable" id="9">
+                        <tr class = "mthead">
+                            <td class = "mtname" colspan="2">ግንቦት</td>
+                            <td class = "mtnone" colspan="3"></td>
+                            <td>ዘመነ</td>
+                            <td class = "mtyear"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td>እሁድ</td>
+                            <td>ሰኞ</td>
+                            <td>ማክሰኞ</td>
+                            <td>እሮብ</td>
+                            <td>ሐሙስ</td>
+                            <td>ዓርብ</td>
+                            <td>ቅዳሜ</td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su91"></td>
+                            <td id="mo91"></td>
+                            <td id="tu91"></td>
+                            <td id="we91"></td>
+                            <td id="th91"></td>
+                            <td id="fr91"></td>
+                            <td id="sa91"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su92"></td>
+                            <td id="mo92"></td>
+                            <td id="tu92"></td>
+                            <td id="we92"></td>
+                            <td id="th92"></td>
+                            <td id="fr92"></td>
+                            <td id="sa92"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su93"></td>
+                            <td id="mo93"></td>
+                            <td id="tu93"></td>
+                            <td id="we93"></td>
+                            <td id="th93"></td>
+                            <td id="fr93"></td>
+                            <td id="sa93"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su94"></td>
+                            <td id="mo94"></td>
+                            <td id="tu94"></td>
+                            <td id="we94"></td>
+                            <td id="th94"></td>
+                            <td id="fr94"></td>
+                            <td id="sa94"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="su95"></td>
+                            <td id="mo95"></td>
+                            <td id="tu95"></td>
+                            <td id="we95"></td>
+                            <td id="th95"></td>
+                            <td id="fr95"></td>
+                            <td id="sa95"></td> 
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="su96"></td>
+                            <td id="mo96"></td>
+                            <td id="tu96"></td>
+                            <td id="we96"></td>
+                            <td id="th96"></td>
+                            <td id="fr96"></td>
+                            <td id="sa96"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                	<table class = "mtable" id="10">
+                        <tr class = "mthead">
+                            <td class = "mtname" colspan="2">ሰኔ</td>
+                            <td class = "mtnone" colspan="3"></td>
+                            <td>ዘመነ</td>
+                            <td class = "mtyear"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td>እሁድ</td>
+                            <td>ሰኞ</td>
+                            <td>ማክሰኞ</td>
+                            <td>እሮብ</td>
+                            <td>ሐሙስ</td>
+                            <td>ዓርብ</td>
+                            <td>ቅዳሜ</td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="sua1"></td>
+                            <td id="moa1"></td>
+                            <td id="tua1"></td>
+                            <td id="wea1"></td>
+                            <td id="tha1"></td>
+                            <td id="fra1"></td>
+                            <td id="saa1"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="sua2"></td>
+                            <td id="moa2"></td>
+                            <td id="tua2"></td>
+                            <td id="wea2"></td>
+                            <td id="tha2"></td>
+                            <td id="fra2"></td>
+                            <td id="saa2"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="sua3"></td>
+                            <td id="moa3"></td>
+                            <td id="tua3"></td>
+                            <td id="wea3"></td>
+                            <td id="tha3"></td>
+                            <td id="fra3"></td>
+                            <td id="saa3"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="sua4"></td>
+                            <td id="moa4"></td>
+                            <td id="tua4"></td>
+                            <td id="wea4"></td>
+                            <td id="tha4"></td>
+                            <td id="fra4"></td>
+                            <td id="saa4"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="sua5"></td>
+                            <td id="moa5"></td>
+                            <td id="tua5"></td>
+                            <td id="wea5"></td>
+                            <td id="tha5"></td>
+                            <td id="fra5"></td>
+                            <td id="saa5"></td> 
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="sua6"></td>
+                            <td id="moa6"></td>
+                            <td id="tua6"></td>
+                            <td id="wea6"></td>
+                            <td id="tha6"></td>
+                            <td id="fra6"></td>
+                            <td id="saa6"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                	<table class = "mtable" id="11">
+                        <tr class = "mthead">
+                            <td class = "mtname" colspan="2">ሐምሌ</td>
+                            <td class = "mtnone" colspan="3"></td>
+                            <td>ዘመነ</td>
+                            <td class = "mtyear"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td>እሁድ</td>
+                            <td>ሰኞ</td>
+                            <td>ማክሰኞ</td>
+                            <td>እሮብ</td>
+                            <td>ሐሙስ</td>
+                            <td>ዓርብ</td>
+                            <td>ቅዳሜ</td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="sub1"></td>
+                            <td id="mob1"></td>
+                            <td id="tub1"></td>
+                            <td id="web1"></td>
+                            <td id="thb1"></td>
+                            <td id="frb1"></td>
+                            <td id="sab1"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="sub2"></td>
+                            <td id="mob2"></td>
+                            <td id="tub2"></td>
+                            <td id="web2"></td>
+                            <td id="thb2"></td>
+                            <td id="frb2"></td>
+                            <td id="sab2"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="sub3"></td>
+                            <td id="mob3"></td>
+                            <td id="tub3"></td>
+                            <td id="web3"></td>
+                            <td id="thb3"></td>
+                            <td id="frb3"></td>
+                            <td id="sab3"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="sub4"></td>
+                            <td id="mob4"></td>
+                            <td id="tub4"></td>
+                            <td id="web4"></td>
+                            <td id="thb4"></td>
+                            <td id="frb4"></td>
+                            <td id="sab4"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="sub5"></td>
+                            <td id="mob5"></td>
+                            <td id="tub5"></td>
+                            <td id="web5"></td>
+                            <td id="thb5"></td>
+                            <td id="frb5"></td>
+                            <td id="sab5"></td> 
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="sub6"></td>
+                            <td id="mob6"></td>
+                            <td id="tub6"></td>
+                            <td id="web6"></td>
+                            <td id="thb6"></td>
+                            <td id="frb6"></td>
+                            <td id="sab6"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                	<table class = "mtable" id="12">
+                        <tr class = "mthead" colspan="2">
+                            <td class = "mtname" colspan="2">ነሐሴ</td>
+                            <td class = "mtnone" colspan="3"></td>
+                            <td>ዘመነ</td>
+                            <td class = "mtyear"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td>እሁድ</td>
+                            <td>ሰኞ</td>
+                            <td>ማክሰኞ</td>
+                            <td>እሮብ</td>
+                            <td>ሐሙስ</td>
+                            <td>ዓርብ</td>
+                            <td>ቅዳሜ</td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="suc1"></td>
+                            <td id="moc1"></td>
+                            <td id="tuc1"></td>
+                            <td id="wec1"></td>
+                            <td id="thc1"></td>
+                            <td id="frc1"></td>
+                            <td id="sac1"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="suc2"></td>
+                            <td id="moc2"></td>
+                            <td id="tuc2"></td>
+                            <td id="wec2"></td>
+                            <td id="thc2"></td>
+                            <td id="frc2"></td>
+                            <td id="sac2"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="suc3"></td>
+                            <td id="moc3"></td>
+                            <td id="tuc3"></td>
+                            <td id="wec3"></td>
+                            <td id="thc3"></td>
+                            <td id="frc3"></td>
+                            <td id="sac3"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="suc4"></td>
+                            <td id="moc4"></td>
+                            <td id="tuc4"></td>
+                            <td id="wec4"></td>
+                            <td id="thc4"></td>
+                            <td id="frc4"></td>
+                            <td id="sac4"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="suc5"></td>
+                            <td id="moc5"></td>
+                            <td id="tuc5"></td>
+                            <td id="wec5"></td>
+                            <td id="thc5"></td>
+                            <td id="frc5"></td>
+                            <td id="sac5"></td> 
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="suc6"></td>
+                            <td id="moc6"></td>
+                            <td id="tuc6"></td>
+                            <td id="wec6"></td>
+                            <td id="thc6"></td>
+                            <td id="frc6"></td>
+                            <td id="sac6"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                	<table class = "mtable" id="13">
+                        <tr class = "mthead">
+                            <td class = "mtname" colspan="2">ጷጉሜ</td>
+                            <td class = "mtnone" colspan="3"></td>
+                            <td>ዘመነ</td>
+                            <td class = "mtyear"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td>እሁድ</td>
+                            <td>ሰኞ</td>
+                            <td>ማክሰኞ</td>
+                            <td>እሮብ</td>
+                            <td>ሐሙስ</td>
+                            <td>ዓርብ</td>
+                            <td>ቅዳሜ</td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="sud1"></td>
+                            <td id="mod1"></td>
+                            <td id="tud1"></td>
+                            <td id="wed1"></td>
+                            <td id="thd1"></td>
+                            <td id="frd1"></td>
+                            <td id="sad1"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="sud2"></td>
+                            <td id="mod2"></td>
+                            <td id="tud2"></td>
+                            <td id="wed2"></td>
+                            <td id="thd2"></td>
+                            <td id="frd2"></td>
+                            <td id="sad2"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="sud3"></td>
+                            <td id="mod3"></td>
+                            <td id="tud3"></td>
+                            <td id="wed3"></td>
+                            <td id="thd3"></td>
+                            <td id="frd3"></td>
+                            <td id="sad3"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="sud4"></td>
+                            <td id="mod4"></td>
+                            <td id="tud4"></td>
+                            <td id="wed4"></td>
+                            <td id="thd4"></td>
+                            <td id="frd4"></td>
+                            <td id="sad4"></td>
+                        </tr>
+                        <tr class = "mtwhite">
+                            <td id="sud5"></td>
+                            <td id="mod5"></td>
+                            <td id="tud5"></td>
+                            <td id="wed5"></td>
+                            <td id="thd5"></td>
+                            <td id="frd5"></td>
+                            <td id="sad5"></td>
+                        </tr>
+                        <tr class = "mtblue">
+                            <td id="sud6"></td>
+                            <td id="mod6"></td>
+                            <td id="tud6"></td>
+                            <td id="wed6"></td>
+                            <td id="thd6"></td>
+                            <td id="frd6"></td>
+                            <td id="sad6"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                </td>
+                <td></td>
+            </tr>
+                
+        </table>
+        <div id = "hhead">
+            Holidays
+            <div id ="holiday">
+
+            </div>
+        </div>
+    </body>
+    <footer>
+
+    </footer>
+    <script src = "../js/calender.js"></script>
+</html>
